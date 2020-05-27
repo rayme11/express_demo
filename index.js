@@ -6,6 +6,7 @@ const PORT = 3000;
 
 app.use(express.static('./public'));
 
+// You could test the bellow end points with any API client
 
 app.listen(PORT, () => {
     console.log(`Your server is running on port ${PORT}`);
