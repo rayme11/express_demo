@@ -6,11 +6,17 @@
   "scripts": {
     "start": "nodemon ./index.js --exec babel-node -e js"
   },
+  "events": {
+    "restart": "kill-port 3000",
+    "crash": "kill-port 3000"
+  },
+  "delay": "1500",
   "author": "Emmanuel Henri",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
