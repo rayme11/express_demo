@@ -45,7 +45,7 @@ app.get('/item/:id', (req, res, next) => {
     res.send(data[user]);
     next();
 }, (req, res) =>
-    console.log('Did you get the right data?')
+    console.log('Did you get the right data ?')
 );
 
 app.route('/item')
